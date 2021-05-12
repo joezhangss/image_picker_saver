@@ -82,6 +82,9 @@ class ImagePickerSaver {
         'description': description
       },
     );
+    if(filePath == "" || filePath == null){
+      return "";
+    }
     debugPrint("saved filePath:" + filePath);
     //process ios return filePath
     if(filePath.startsWith("file://")){
